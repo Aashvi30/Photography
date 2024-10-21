@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f85c50b7;
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery-container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #131414;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 images in each row */
+            gap: 15px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease; /* Scale effect for images */
+        }
+        .gallery-item:hover {
+            transform: scale(1.05); /* Scale the item on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Scale the image slightly on hover */
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 images in each row for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 image in each row for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <h1 class="gallery-title">Photography Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/60/ab/91/60ab91717705738ca3f7085b1b02d87d.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/79/c2/39/79c239c395c8fa5f8605b679d678c8f6.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/2a/35/ba/2a35baf560e55d61d00991326b3df39f.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/ad/67/30/ad6730c3fe8fca125038403c5b1f0168.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/73/98/78/7398786825a18f9faa235669835013a1.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/43/c4/a8/43c4a82434769f56550e01a1132ddd76.jpg" alt="Image 6">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

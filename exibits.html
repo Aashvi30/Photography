@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Exhibits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e67373a9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .exhibit-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .exhibit {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width:400px;
+        }
+        .exhibit img {
+            width: 100%;
+            height: auto;
+        }
+        .exhibit h3 {
+            text-align: center;
+            margin: 15px 0 10px;
+        }
+        .exhibit p {
+            padding: 0 15px 15px;
+            text-align: center;
+        }
+        .exhibit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .exhibit {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .exhibit {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Photography Exhibits</h1>
+<div class="exhibit-section">
+    <div class="exhibit">
+        <img src="https://i.pinimg.com/564x/29/14/46/2914464c2798dc93928d6b3927e8626f.jpg" alt="Landscape Photography">
+        <h3>Landscape Photography</h3>
+        <p>Experience the beauty of nature through stunning landscape shots from around the world.</p>
+    </div>
+    <div class="exhibit">
+        <img src="https://i.pinimg.com/236x/e2/d5/30/e2d5309dc6a4c78e6510191bd80fedc1.jpg" alt="Portrait Photography">
+        <h3>Portrait Photography</h3>
+        <p>Capturing emotions and stories through unique and intimate portrait sessions.</p>
+    </div>
+    <div class="exhibit">
+        <img src="wildlife.jpg" alt="Wildlife Photography">
+        <h3>Wildlife Photography</h3>
+        <p>Discover the wonders of wildlife in their natural habitat with breathtaking images.</p>
+    </div>
+    <div class="exhibit">
+        <img src="fashion.jpg" alt="Fashion Photography">
+        <h3>Fashion Photography</h3>
+        <p>Showcasing style and creativity through vibrant fashion shoots and editorial work.</p>
+    </div>
+    <div class="exhibit">
+        <img src="food.jpg" alt="Food Photography">
+        <h3>Food Photography</h3>
+        <p>Tempt your taste buds with mouth-watering food photography that tells a story.</p>
+    </div>
+    <div class="exhibit">
+        <img src="travel.jpg" alt="Travel Photography">
+        <h3>Travel Photography</h3>
+        <p>Join me on a journey through stunning locations and cultural experiences around the globe.</p>
+    </div>
+</div>
+
+</body>
+</html>

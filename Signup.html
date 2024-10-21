@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup-container input[type="text"], 
+        .signup-container input[type="email"], 
+        .signup-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signup-container button {
+            width: 98%;
+            padding: 10px;
+            background-color: #277b9c;
+            color: rgb(10, 9, 9);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .signup-container button:hover {
+            background-color: #c4086f77;
+        }
+        .signup-container .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .signup-container .login-link a {
+            color: #277b9c;
+            text-decoration: none;
+        }
+        .signup-container .login-link a:hover {
+            text-decoration: underline;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(158, 49, 168);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+    </div>
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get input values (optional step to do something with data)
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Display a success message
+        var messageDiv = document.getElementById('message');
+        messageDiv.textContent = "You have successfully signed up!";
+
+        // Optionally clear the form after submission
+        document.getElementById('signupForm').reset();
+    });
+</script>
+
+</body>
+</html>

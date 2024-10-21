@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduled Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #67b8b9a8;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .event-card .event-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .event-card .event-date {
+            background-color: #277b9c;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .event-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            font-size: 14px;
+            color: #130606b9;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Event 1 -->
+<div class="event-card">
+    <img src="https://i.pinimg.com/236x/4f/30/41/4f30411798a2e867b3a674e1bad11a49.jpg" alt="Photography Workshop">
+    <div class="event-info">
+        <div class="event-date">Oct 15, 2024</div>
+        <h3>Photography Workshop</h3>
+        <p>Learn the fundamentals of photography in this one-day workshop with industry professionals.</p>
+    </div>
+</div>
+
+<!-- Event 2 -->
+<div class="event-card">
+    <img src="https://i.pinimg.com/736x/85/79/23/85792329a89a409d2cc8d721b1256025.jpg" alt="Night Sky Photography">
+    <div class="event-info">
+        <div class="event-date">Nov 20, 2024</div>
+        <h3>Night Sky Photography</h3>
+        <p>Explore the wonders of astrophotography and capture stunning night sky images.</p>
+    </div>
+</div>
+
+<!-- Event 3 -->
+<div class="event-card">
+    <img src="https://i.pinimg.com/564x/d7/68/6c/d7686ce86b5c366cf2a7b5744c99569d.jpg" alt="Portrait Photography">
+    <div class="event-info">
+        <div class="event-date">Dec 05, 2024</div>
+        <h3>Portrait Photography Masterclass</h3>
+        <p>Master the art of portrait photography with lighting techniques and camera settings.</p>
+    </div>
+</div>
+
+<!-- Event 4 -->
+<div class="event-card">
+    <img src="https://i.pinimg.com/236x/96/05/d2/9605d234a2014c912c10ea23bb07e7c6.jpg" alt="Wildlife Photography Tour">
+    <div class="event-info">
+        <div class="event-date">Jan 12, 2025</div>
+        <h3>Wildlife Photography Tour</h3>
+        <p>Join us on an adventure to photograph wildlife in their natural habitats.</p>
+    </div>
+</div>
+
+<!-- Event 5 -->
+<div class="event-card">
+    <img src="https://i.pinimg.com/564x/e0/c2/00/e0c200abfa7771065208d7681a7ae6b2.jpg" alt="Urban Photography">
+    <div class="event-info">
+        <div class="event-date">Feb 09, 2025</div>
+        <h3>Urban Photography Expedition</h3>
+        <p>Capture the essence of urban life and architecture in this street photography event.</p>
+    </div>
+</div>
+
+</body>
+</html>
